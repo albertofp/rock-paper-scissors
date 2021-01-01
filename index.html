@@ -32,11 +32,6 @@
             } else{ console.log('Error! Please choose either rock, paper or scissors.');
           break;}
           }
-          break;
-
-
-        case null:
-          break;
       }
     }
 
@@ -48,6 +43,7 @@
       /*draw case*/
       if (playerSelection == computerSelection) {
         console.log('It\'s a draw!');
+        roundWinner = '';
       }
       /*player wins*/
       if (playerSelection == 'rock' && computerSelection == 'scissors') {
